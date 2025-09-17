@@ -3,11 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Journey of Non-Tech to Tech</title>
+  <title>Making this website to learn and grow while tracking my progress in coding,philosophy and living</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Banner styles */
+    .banner {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      height: 250px; /* adjust as needed */
+    }
+
+    .banner-track {
+      display: flex;
+      width: calc(300px * 6); /* adjust if adding/removing images */
+      animation: scroll 20s linear infinite;
+    }
+
+    .banner img {
+      width: 100%;
+      max-width: 300px;
+      height: 250px;
+      object-fit: cover;
+      margin-right: 10px;
+      border-radius: 10px;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Page content */
+    main {
       margin: 50px;
     }
     a {
@@ -23,12 +57,29 @@
   </style>
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>Click the links below to visit my favorite services:</p>
 
-  <a href="https://www.google.com" target="_blank">Google</a>
-  <a href="https://github.com" target="_blank">GitHub</a>
-  <a href="https://openai.com" target="_blank">OpenAI</a>
+  <!-- Header Banner -->
+  <div class="banner">
+    <div class="banner-track">
+      <!-- Replace with your own images (local path recommended) -->
+      <img src=""C:\Users\chait\Pictures\Images_For_my_website\Banner_image_1.jpeg"" alt="Banner 1">
+      <img src="images/banner2.jpg" alt="Banner 2">
+      <img src="images/banner3.jpg" alt="Banner 3">
+      <img src="images/banner4.jpg" alt="Banner 4">
+      <img src="images/banner5.jpg" alt="Banner 5">
+      <img src="images/banner6.jpg" alt="Banner 6">
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Wandering Persuits</h1>
+    <p>This is a website to track my progress in coding,philosophy and living</p>
+
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://github.com" target="_blank">GitHub</a>
+    <a href="https://openai.com" target="_blank">OpenAI</a>
+  </main>
 
 </body>
 </html>
